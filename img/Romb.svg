@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="11px" height="12px" viewBox="0 0 11 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Shape 1 copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="154.875496 70.003416 159.960814 64.918126 165.046216 70.003416 159.960814 75.088776"></polygon>
+    </defs>
+    <g id="Pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Shop" transform="translate(-283.000000, -184.000000)">
+            <g id="header" transform="translate(129.000000, 120.000000)">
+                <g id="Shape-1-copy">
+                    <use fill="#F1CDB0" xlink:href="#path-1"></use>
+                    <use fill="#000000" xlink:href="#path-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
