@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Барбершоп</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
@@ -19,7 +22,7 @@
           <li><a href="#">Контакты</a></li>
         </ul>
         <ul class="input-navigation">
-          <li class="login-link"><a href="#">Вход</a></li>
+          <li class="login-link"><a href="login.html">Вход</a></li>
         </ul>
       </nav>
     </header>
@@ -64,10 +67,10 @@
       <section class="gallery">
         <h2>Фотогалерея</h2>
         <figure class="gallery-content">
-          <a href="#"><img src="image/studio.jpg" width="286" height="164" alt="фото студии"></a>
+          <a href="#"><img src="img/studio.jpg" width="286" height="164" alt="фото студии"></a>
         </figure>
-        <button class="button gallery-batton gallery-batton-back"type="button" name="button">Назад</button>
-        <button class="button gallery-batton gallery-batton-next"type="button" name="button">Вперед</button>
+        <button class="button gallery-batton gallery-batton-back" type="button" name="button">Назад</button>
+        <button class="button gallery-batton gallery-batton-next" type="button" name="button">Вперед</button>
       </section>
 
       <section class="contact">
@@ -89,7 +92,29 @@
       <section class="write">
         <h2>Записаться</h2>
         <p class="write-info">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
-        <!--форма-->
+        <form class="" action="write.html" method="post">
+          <p class="write-data">
+            <label>Дата
+              <input type="date" name="date" value="" placeholder="ДД.ММ.ГГГГ">
+            </label>
+          </p>
+          <p class="write-time">
+            <label>Время
+              <input type="time" name="time" value="" placeholder="HH:MM">
+            </label>
+          </p>
+          <p class="write-name">
+            <label>Имя
+              <input type="text" name="name" value="" placeholder="Имя">
+            </label>
+          </p>
+          <p class="write-data">
+            <label>Телефон
+              <input type="tel" name="tel" value="" placeholder="+7 123-45-67">
+            </label>
+          </p>
+          <button class="button" type="submit">Отправить</button>
+        </form>
       </section>
 
       <footer class="main-footer">
@@ -116,11 +141,29 @@
       <section class="modal modal-login">
         <h2>Личный кабинет</h2>
         <p>Введите свой логин и пароль.</p>
-        <span class="modal-close">x</span>
+        <form class="" action="index.html" method="post">
+          <label class="login-field">
+            <input type="text" name="login" value="Логин" placeholder="Логин">
+          </label>
+          <label class="pass-field">
+            <input type="password" name="password" value="Пароль" placeholder="Пароль">
+          </label>
+          <p class="login-pass-info">
+            <label class="remember">
+              <input type="checkbox" name="remember">ЗАПОМНИТЕ МЕНЯ
+            </label>
+            <a class="restore" href="#">Я ЗАБЫЛ ПАРОЛЬ!</a>
+          </p>
+          <button class="button" type="submit" name="button">Войти</button>
+        </form>
+        <button class="modal-close" type="button" name="button">Закрыть</button>
       </section>
 
       <section class="modal-map">
         <h2 class="visually-hidden">Как до нас добраться</h2>
+        <div class="map-adress">
+          <img src="img/map mask.jpg" alt="САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8">
+        </div>
         <span class="modal-close">x</span>
 
       </section>
